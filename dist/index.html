@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    
+  Main page
+
+  </title>
+  <link rel="stylesheet" href="/dist/css/hamburger.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <header class="header">
+	<div class="wrap">
+		<!-- top-bar -->
+		<div class="container container--top-bar">
+			<div class="top-bar__contacts">
+				<a class="top-bar__contacts-link" href="mailto:#">
+					<i class="far fa-envelope"></i> <span>admin@gmail.com</span></a
+				>
+
+				<a class="top-bar__contacts-link" href="tel:0631508504">
+					<i class="fas fa-phone-square"></i> <span>+38(063)150-85-04</span></a
+				>
+			</div>
+
+			<div class="top-bar__socials">
+				<a href="#" class="top-bar__socials-link"> <i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="top-bar__socials-link"> <i class="fab fa-twitter"></i></a>
+				<a href="#" class="top-bar__socials-link"> <i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="top-bar__socials-link"> <i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+	</div>
+	<!-- top-bar -->
+
+	<div class="wrap">
+		<div class="container container--navigation-header">
+			<div class="logo">
+				<a href="index.html"><img class="logo-img" src="img/logo.png" alt="Home"/></a>
+			</div>
+
+			<div class="navigation-header">
+			<nav class="main-menu">
+				<ul class="main-menu__list">
+					<li class="main-menu__item"><a href="index.html" class="main-menu__link active">Home</a></li>
+					<li class="main-menu__item"><a href="#" class="main-menu__link">Products</a></li>
+					<li class="main-menu__item"><a href="#" class="main-menu__link">Hot Deals</a></li>
+					<li class="main-menu__item"><a href="#" class="main-menu__link">About</a></li>
+					<li class="main-menu__item"><a href="#" class="main-menu__link">Contacts</a></li>
+				</ul>
+			</nav>
+
+
+			<ul class="header-user-btn__list">
+				<li class="header-user-btn__item">
+					<a href="#" class="header-user-btn__link"><i class="fas fa-search"></i></a>
+				</li>
+				<li class="header-user-btn__item">
+					<a href="#" class="header-user-btn__link"><i class="far fa-user"></i></a>
+				</li>
+				<li class="header-user-btn__item">
+					<a href="#" class="header-user-btn__link"><i class="fas fa-shopping-basket"></i></a>
+				</li>
+			</ul>
+
+			<button class="hamburger hamburger--collapse is-active" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+
+		</div>
+		</div>
+	</div>
+</header>
+
+
+  <div class="content">
+    
+<div class="slider"></div>
+<div class="new-arrivals">
+
+  <div class="container">
+    <h2 class="new-arrivals-title"> <span class="first-word">New</span> arrivals</h2>
+    <p class="new-arrivals-description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nostrum magnam quaerat, nihil ipsam molestiae!
+    </p>
+  
+  
+  <div class="new-arrivals__cards">
+    
+  
+       <ul class="new-arrivals__list">
+          
+         <li class="new-arrivals__item">
+           <img src="img/products/product1.png" alt="Reebock Track Jacket" class="new-arrivals__item-img">
+           <a href="#" class="new-arrivals__item-title"> Reebock Track Jacket </a>
+           <span class="new-arrivals__item-price">
+             $100
+           </span>
+          </li>
+  
+          
+         <li class="new-arrivals__item">
+           <img src="img/products/product2.png" alt="Reebock Track Jacket" class="new-arrivals__item-img">
+           <a href="#" class="new-arrivals__item-title"> Reebock Track Jacket </a>
+           <span class="new-arrivals__item-price">
+             $100
+           </span>
+          </li>
+  
+          
+         <li class="new-arrivals__item">
+           <img src="img/products/product1.png" alt="Reebock Track Jacket" class="new-arrivals__item-img">
+           <a href="#" class="new-arrivals__item-title"> Reebock Track Jacket </a>
+           <span class="new-arrivals__item-price">
+             $100
+           </span>
+          </li>
+  
+          
+         <li class="new-arrivals__item">
+           <img src="img/products/product3.png" alt="Reebock Track Jacket" class="new-arrivals__item-img">
+           <a href="#" class="new-arrivals__item-title"> Reebock Track Jacket </a>
+           <span class="new-arrivals__item-price">
+             $100
+           </span>
+          </li>
+  
+          
+       </ul>
+  </div>
+  </div>
+
+</div>
+
+
+  </div>
+
+  <footer class="footer">
+  Hello, from footer
+</footer>
+
+  <script>
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function() {
+        hamburger.classList.toggle("is-active");
+      });
+  </script>
+
+</body>
+</html>

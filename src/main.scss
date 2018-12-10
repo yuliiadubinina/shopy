@@ -2,3 +2,9 @@
 @import "./assets/scss/vars";
 @import "./assets/scss/mixins";
 @import "./assets/scss/default";
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+@import "./components/Layout/Header/header";
+@import "./components/slider/slider.scss";
+@import "./components/new_arrivals/new_arrivals.scss";
+

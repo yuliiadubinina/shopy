@@ -1,0 +1,34 @@
+<div class="new-arrivals">
+
+  <div class="container">
+    <h2 class="new-arrivals-title"> <span class="first-word">New</span> arrivals</h2>
+    <p class="new-arrivals-description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nostrum magnam quaerat, nihil ipsam molestiae!
+    </p>
+  
+  
+  <div class="new-arrivals__cards">
+    {% set items = [
+      { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+      { img: "img/products/product2.png", title: "Reebock Track Jacket", price: "$100"},
+      { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+      { img: "img/products/product3.png", title: "Reebock Track Jacket", price: "$100"}
+      ]
+      %}
+  
+       <ul class="new-arrivals__list">
+          {% for item in items %}
+         <li class="new-arrivals__item">
+           <img src="{{ item.img }}" alt="{{ item.title }}" class="new-arrivals__item-img">
+           <a href="#" class="new-arrivals__item-title"> {{ item.title }} </a>
+           <span class="new-arrivals__item-price">
+             {{ item.price }}
+           </span>
+          </li>
+  
+          {% endfor %}
+       </ul>
+  </div>
+  </div>
+
+</div>
