@@ -40,15 +40,11 @@
 	flex: 1 0;
 }
 
-.logo {
+.logo-img {
 	width: 100px;
 	@include medium {
 		width: 130px;
 	}
-}
-
-.logo-img {
-	width: 100%;
 }
 
 .main-menu {
@@ -64,8 +60,8 @@
 
 .hamburger {
 	display: block;
-  padding: 0;
-  outline: none;
+	padding: 0;
+	outline: none;
 	@include medium {
 		display: none;
 	}
@@ -75,26 +71,23 @@
 	display: flex;
 	list-style: none;
 	padding: 0;
-}
-
-.main-menu__item {
-	&:not(:last-child) {
-		margin-right: 20px;
-	}
-
-	@include large {
+	li {
 		&:not(:last-child) {
-			margin-right: 40px;
+			margin-right: 20px;
+		}
+		@include large {
+			&:not(:last-child) {
+				margin-right: 40px;
+			}
 		}
 	}
-}
-
-.main-menu__link {
-	text-decoration: none;
-  color: $primary-text;
-  &:active {
-    color: $secondary;
-  }
+	a {
+		text-decoration: none;
+		color: $primary-text;
+		&:active {
+			color: $secondary;
+		}
+	}
 }
 
 .header-user-btn__list {
@@ -102,23 +95,23 @@
 	list-style: none;
 	padding: 0;
 	margin: auto;
+	li {
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+		@include extra {
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+		}
+	}
 	@include medium {
 		margin: 0;
 	}
-}
-
-.header-user-btn__item {
-	&:not(:last-child) {
-		margin-right: 15px;
-  }
-
-  @include extra {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+	a {
+		color: $primary-text;
+		&:hover {
+			color: $secondary;
+		}
 	}
-}
-
-.header-user-btn__link {
-	color: $primary-text;
 }
