@@ -1,6 +1,5 @@
 .container--best-sales {
-	padding-top: 20px;
-	padding-bottom: 80px;
+	padding: 20px 0 40px 0;
 }
 
 .best-sales-title {
@@ -19,11 +18,13 @@
 .best-sales__list {
 	list-style: none;
   display: flex;
-  
 	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 0;
+	justify-content: space-between;
+	padding: 0 20px;
 	margin: auto;
+	@include medium {
+		padding: 0;
+	}
   @include extra {
     flex-wrap: nowrap;
         }
@@ -34,9 +35,6 @@
 		background: #fff;
 		padding: 30px 25px;
 		margin: 15px auto;
-		// &:not(:last-child) {
-      // 	margin-bottom: 30px;
-      // }
       @include extra {
         margin: 15px 10px;
       }
