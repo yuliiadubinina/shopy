@@ -1,0 +1,59 @@
+<div class="container container--products">
+  <aside class="aside">
+
+      <div class="aside-categories aside--products">
+          <ul class="aside-categories__list">
+              <p class="aside-categories__list-title">
+                Categories
+              </p>
+            <li class="aside-categories__item">Man</li>
+            <li class="aside-categories__item">Women</li>
+            <li class="aside-categories__item">Children</li>
+            <li class="aside-categories__item">Hot deals</li>
+          </ul>
+        </div>
+
+    <div class="aside-price-filter aside--products">
+      <p class="aside-price-filter__list-title">
+        Price filter
+      </p>
+      </div>
+
+  </aside>
+  <div class="products">
+    <div class="products__cards">
+      {% set items = 
+        [ 
+        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"}, 
+        { img: "img/products/product2.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product3.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product2.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product3.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"}
+        ]
+        %}
+			<ul class="products__list">
+				{% for item in items %}
+				<li class="products__item">
+					<img src="{{ item.img }}" alt="{{ item.title }}" class="products__item-img" />
+					<a href="product-show.html" class="products__item-title"> {{ item.title }} </a>
+					<span class="products__item-price"> {{ item.price }} </span>
+				</li>
+				{% endfor %}
+			</ul>
+    </div>
+    <div class="switch-block">
+      <ul class="switch-list">
+        <li class="switch-item"><a href="#"></a></li>
+        <li class="switch-item"><a href="#"></a></li>
+        <li class="switch-item"><a href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

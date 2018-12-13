@@ -1,0 +1,27 @@
+<!-- RELATED PRODUCTS -->
+<div class="container container--related-products">
+	<h2 class="related-products-title"><span class="first-word">Related</span> products</h2>
+	<p class="related-products-description">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nostrum magnam quaerat, nihil ipsam molestiae!
+	</p>
+
+	<div class="related-products__cards">
+    {% set items = [ 
+    { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"}, 
+    { img: "img/products/product2.png", title: "Reebock Track Jacket", price: "$100"}, 
+    { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"}, 
+    { img: "img/products/product3.png", title: "Reebock Track Jacket", price: "$100"}
+    ]
+    %}
+		<ul class="related-products__list">
+			{% for item in items %}
+			<li class="related-products__item">
+				<img src="{{ item.img }}" alt="{{ item.title }}" class="related-products__item-img" />
+				<a href="product-show.html" class="related-products__item-title"> {{ item.title }} </a>
+				<span class="related-products__item-price"> {{ item.price }} </span>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+	<!-- ./RELATED PRODUCTS -->
