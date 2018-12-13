@@ -1,25 +1,21 @@
-.promotions-wrap {
-  background: #f3f5f7;
-}
-
 .container--promotions {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-  padding: 30px 15px;
 	img {
-		width: 100%;
+    width: 100%;
+    height: 100%;
 	}
-	@include medium {
+	@include large {
     flex-wrap: nowrap;
-    padding: 60px 15px;
+    padding-bottom: 60px;
 	}
 }
 
 .promotions-first-banner {
   width: 100%;
-  @include medium {
+  @include large {
     width: 60%;
     margin-right: 30px;
 	}
@@ -27,7 +23,7 @@
 
 .promotions-second-banner {
   width: 100%;
-  @include medium {
+  @include large {
     width: 40%;
 	}
 }

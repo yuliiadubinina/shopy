@@ -1,0 +1,36 @@
+<!-- BEST-SALES -->
+	<div class="container container--best-sales">
+		<h2 class="best-sales-title"><span>Best </span>sales</h2>
+		<p class="best-sales-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, maxime!</p>
+
+		<div class="best-sales__cards">
+
+      {% set items = [ 
+        { img: "img/product-img.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/product-img.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/product-img.png", title: "Reebock Track Jacket", price: "$100"}
+        ]
+      %}
+      
+			<ul class="best-sales__list">
+
+          {% for item in items %}
+
+				<li class="best-sales__item">
+          <img src="{{ item.img }}" alt="{{ item.title }}" class="best-sales__item-img" />					
+
+					<div class="best-sales__item-content">
+						<a href="#" class="best-sales__title-link">{{ item.title }}</a>
+						<div class="best-sales__item-star-price">
+							<div class="best-sales__item-stars"></div>
+							<div class="best-sales__item-price">{{ item.price }}</div>
+						</div>
+					</div>
+        </li>
+
+        {% endfor %}
+
+			</ul>
+		</div>
+	</div>
+<!-- BEST-SALES END-->

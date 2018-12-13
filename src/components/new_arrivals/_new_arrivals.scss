@@ -1,9 +1,6 @@
-.new-arrivals-wrap {
-	background: #f3f5f7;
-}
-
 .container--new-arrivals {
-	padding: 60px 15px;
+	padding-top: 55px;
+	padding-bottom: 80px;
 }
 
 .new-arrivals-title {
@@ -54,8 +51,16 @@
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 		}
 	}
-}
 
+	img {
+		@include large {
+			width: 70%;
+		}
+		@include extra {
+			width: auto;
+		}
+	}
+}
 
 .new-arrivals__item-title {
 	text-decoration: none;
@@ -82,12 +87,11 @@
 	justify-content: center;
 	list-style: none;
 	padding: 0;
-  li {
-    width: 7px;
-    height: 7px;
-    background: $secondary;
-    border-radius: 5px;
-    margin: 3px;
-  }
+	li {
+		width: 7px;
+		height: 7px;
+		background: $secondary;
+		border-radius: 5px;
+		margin: 3px;
+	}
 }
-
