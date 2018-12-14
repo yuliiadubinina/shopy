@@ -1,0 +1,92 @@
+.aside {
+	width: 33%;
+	display: none;
+	margin-top: 60px;
+	@include medium {
+		display: block;
+		width: 25%;
+	}
+}
+
+.aside--products {
+	max-width: 210px;
+	background: #fff;
+	margin-right: auto;
+	font-weight: 600;
+	padding: 20px 40px;
+	margin-bottom: 30px;
+	p {
+		color: $secondary;
+	}
+	ul {
+		padding: 0;
+    list-style: none;
+	}
+	li {
+		margin-top: 30px;
+	}
+	@include extra {
+		max-width: 250px;
+  }
+  label {
+    margin-top: 30px;
+  }
+}
+
+.price-filter {
+  display: flex;
+  input {
+    width: 50%;
+  }
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  // font-size: 16px;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+
+
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4px;
+    top: 4px;
+    width: 7px;
+    height: 7px;
+    background: #fff;
+  }
+  &:hover {
+  background-color: #ccc;
+  }
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: $secondary;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}

@@ -11,6 +11,7 @@
   </title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
+
 </head>
 <body>
   <header class="header">
@@ -65,7 +66,7 @@
 				</li>
 			</ul>
 
-			<button class="hamburger hamburger--collapse is-active" type="button">
+			<button class="hamburger hamburger--collapse" type="button">
 				<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
 				</span>
@@ -80,27 +81,83 @@
     
 <div class="container container--products">
   <aside class="aside">
-
-      <div class="aside-categories aside--products">
-          <ul class="aside-categories__list">
-              <p class="aside-categories__list-title">
-                Categories
-              </p>
-            <li class="aside-categories__item">Man</li>
-            <li class="aside-categories__item">Women</li>
-            <li class="aside-categories__item">Children</li>
-            <li class="aside-categories__item">Hot deals</li>
-          </ul>
-        </div>
-
+	<div class="aside-categories aside--products">
+		<ul class="aside-categories__list">
+			<p class="aside-categories__list-title">
+        Categories
+      </p>
+			<li class="aside-categories__item">Man</li>
+			<li class="aside-categories__item">Women</li>
+			<li class="aside-categories__item">Children</li>
+			<li class="aside-categories__item">Hot deals</li>
+		</ul>
+  </div>
+    
     <div class="aside-price-filter aside--products">
-      <p class="aside-price-filter__list-title">
+      <p class="aside-price-filter__title">
         Price filter
       </p>
-      </div>
+      <div class="price-filter">
+          <input type="range" min="0" max="1200" value="100" class="price-filter__range" id="myRange">
+          <input type="range" min="0" max="1200" value="50" class="price-filter__range" id="myRange">
+        </div>
+    </div>
 
-  </aside>
-  <div class="products">
+      <div class="aside-sizes aside--products">
+          <p class="aside-sizes__title">
+            Sizes
+          </p>
+      <label class="checkbox-container">Small
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        
+        <label class="checkbox-container">Medium
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        
+        <label class="checkbox-container">Large
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        
+        <label class="checkbox-container">X large
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+    </div>
+
+    
+
+      <div class="aside-brands aside--products">
+          <p class="aside-brands__title">
+            Brands
+          </p>
+          <label class="checkbox-container">Reebok
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="checkbox-container">Addidas
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="checkbox-container">Nike
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="checkbox-container">New Balance
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+        </div>
+    
+</aside>
+
+    <div class="products">
     <div class="products__cards">
       
 			<ul class="products__list">
@@ -187,8 +244,12 @@
       </ul>
     </div>
   </div>
-</div>
 
+
+
+
+
+</div>
 <!-- RELATED PRODUCTS -->
 <div class="container container--related-products">
 	<h2 class="related-products-title"><span class="first-word">Related</span> products</h2>

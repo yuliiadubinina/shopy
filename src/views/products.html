@@ -5,7 +5,10 @@
 {% endblock %}
 
 {% block content %}
-{% include 'components/products/products.html' %}
+<div class="container container--products">
+  {% include 'components/products/products-aside/products-aside.html' %}
+  {% include 'components/products/products.html' %}
+</div>
 {% include 'components/related_products/related_products.html' %}
 {% include 'components/news_letter/news_letter.html' %}
 {% endblock %}

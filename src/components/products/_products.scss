@@ -2,38 +2,6 @@
 	display: flex;
 }
 
-.aside {
-	width: 33%;
-	display: none;
-	margin-top: 60px;
-	@include medium {
-		display: block;
-		width: 25%;
-	}
-}
-
-.aside--products {
-	max-width: 210px;
-	background: #fff;
-	margin-right: auto;
-	font-weight: 600;
-	padding: 20px 40px;
-	margin-bottom: 30px;
-	p {
-		color: $secondary;
-	}
-	ul {
-		padding: 0;
-		list-style: none;
-	}
-	li {
-		margin-top: 30px;
-	}
-	@include extra {
-		max-width: 250px;
-	}
-}
-
 .products {
 	width: 100%;
 	@include medium {
