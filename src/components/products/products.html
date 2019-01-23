@@ -2,16 +2,16 @@
     <div class="products__cards">
       {% set items = 
         [ 
-        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"}, 
         { img: "img/products/product2.png", title: "Reebock Track Jacket", price: "$100"},
-        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
         { img: "img/products/product3.png", title: "Reebock Track Jacket", price: "$100"},
         { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
-        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
-        { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product2.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product3.png", title: "Reebock Track Jacket", price: "$100"},
         { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
         { img: "img/products/product2.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product3.png", title: "Reebock Track Jacket", price: "$100"},
         { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"},
+        { img: "img/products/product2.png", title: "Reebock Track Jacket", price: "$100"},
         { img: "img/products/product3.png", title: "Reebock Track Jacket", price: "$100"},
         { img: "img/products/product1.png", title: "Reebock Track Jacket", price: "$100"}
         ]
@@ -19,9 +19,14 @@
 			<ul class="products__list">
 				{% for item in items %}
 				<li class="products__item">
-					<img src="{{ item.img }}" alt="{{ item.title }}" class="products__item-img" />
+          <a href="product-show.html">
+            <img src="{{ item.img }}" alt="{{ item.title }}" class="products__item-img" />
+          </a>
 					<a href="product-show.html" class="products__item-title"> {{ item.title }} </a>
-					<span class="products__item-price"> {{ item.price }} </span>
+          <span class="products__item-price"> {{ item.price }} </span>
+          <button class="btn btn-cart"><i class="fa fa-shopping-cart"></i>
+            <span>Add to cart</span>
+          </button>
 				</li>
 				{% endfor %}
 			</ul>
